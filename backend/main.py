@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route("/quotes", methods=["GET"])
-def get_blog_posts():
+def get_quotes():
     with open("base.json", encoding="utf-8-sig") as f:
         text_data = f.read()
         data = json.loads(text_data)
